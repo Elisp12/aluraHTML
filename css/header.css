@@ -5,7 +5,7 @@
     background-image: url(../images/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    
+
     display: inline-block;
 }
 
@@ -15,6 +15,7 @@
     display: flex;  
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -24,4 +25,14 @@
 
 .container-imagem {
     padding: 1rem;
+}
+
+.lista_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container_botao:checked~.lista_menu {
+    display: block;
 }
