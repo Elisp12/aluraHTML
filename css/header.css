@@ -1,0 +1,27 @@
+.cabeçalho_meu-hanburguer {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: inline-block;
+}
+
+.cabeçalho {
+    background-color: white;
+
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container-imagem {
+    padding: 1rem;
+}
