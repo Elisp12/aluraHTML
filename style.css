@@ -1,7 +1,10 @@
 @import url("css/header.css");
+@import url("css/banner.css");
 
 :root {
     --font--principal: "Poppins";
+
+    --azul--gradiente: linear-gradient( to right, rgb(19, 6, 69) 50%, rgb(30, 6, 102), rgb(32, 11, 118), blue );
 }
 
 body {
