@@ -9,7 +9,7 @@
     display: inline-block;
 }
 
-.cabeçalho {
+.cabecalho {
     background-color: white;
 
     display: flex;  
@@ -24,15 +24,38 @@
 }
 
 .container-imagem {
-    padding: 1rem;
+    padding: 1em;
 }
 
 .lista_menu {
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container_botao:checked~.lista_menu {
     display: block;
+}
+
+.lista_menu_titulo, .lista_menu_item {
+    padding: 1em;
+    background-color: white;
+}
+
+.lista_menu_titulo {
+    color: orange;
+    font-weight: 700;
+}
+
+.lista_menu_link {
+    background: dodgerblue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container_botao {
+    display: none;
 }

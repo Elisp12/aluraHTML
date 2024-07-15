@@ -1,5 +1,12 @@
 @import url("css/header.css");
 
+:root {
+    --font--principal: "Poppins";
+}
+
 body {
     background-color: darkgrey;
+    font-family: var(--font--principal);
+    font-size: 16px;
+    font-weight: 400;
 }
