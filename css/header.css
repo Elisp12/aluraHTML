@@ -59,3 +59,51 @@
 .container_botao {
     display: none;
 }
+
+.container_titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container_tittulo,
+    .container_titulo-negrito {
+        font-family: var(--fonte-secundario);
+        font-size: 30px;
+    }
+
+    .container_titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container_titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes_item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes_link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container_imagem-transparente {
+        display: none;
+    }
+
+    .cabeçalho_meu-hanburguer {
+        display: none;
+    }
+
+}
