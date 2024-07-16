@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
 
     <title>Estudo alura </title>
 </head>
@@ -51,7 +56,56 @@
         <h2 class="banner_titulo">Já sabe por onde começar?</h2>
         <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
-
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/ApacheKafka.svg"
+                    alt="Livro sobre apache kafka e spring boot da alura books">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/Lideranc╠ºa.svg"
+                    alt="Livro sobre liderança em design da alura books">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Javascript.svg"
+                    alt="Livro sobre javascript assertivo da alurabooks">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/Guia Front-end.svg" alt="Livro Guia front end">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Portugol.svg" alt="Livro sobre portugol">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Acessibilidade.svg" alt="livro sobre acessibilidade">
+                </div>
+            </div>
+        <!-- Código omitido -->
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 </html>
