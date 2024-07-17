@@ -11,7 +11,6 @@
 
 .cabecalho {
     background-color: white;
-
     display: flex;  
     justify-content: space-between;
     align-items: center;
@@ -56,15 +55,10 @@
     text-transform: uppercase;
 }
 
-.container_botao {
-    display: none;
-}
-
-.container_titulo {
-    display: none;
-}
-
-.opcoes {
+.container_botao,
+.container_titulo,
+.opcoes,
+.container_texto {
     display: none;
 }
 
@@ -98,11 +92,10 @@
         color: black;
     }
 
-    .container_imagem-transparente {
-        display: none;
-    }
-
-    .cabeçalho_meu-hanburguer {
+    .container_imagem-transparente,
+    .cabeçalho_meu-hanburguer, 
+    .opcoes_botao,
+    .container_texto {
         display: none;
     }
 
@@ -110,8 +103,25 @@
         display: block;
         width: auto;
     }
+    
+}
 
-    .opcoes_botao {
-        display: none;
+@media screen and (min-width: 1280px) {
+    .container_link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container_texto {
+        display: block;
     }
 }
