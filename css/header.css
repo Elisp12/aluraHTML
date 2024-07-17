@@ -15,6 +15,7 @@
 
 .container_botao:checked ~ .container_rotulo {
     background: var(--azul--gradiente);
+    color: white;
 } 
 
 .opcoes_item {
