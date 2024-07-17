@@ -100,7 +100,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .carrossel {
+    .carrossel_container {
         display: flex;
         margin: 0 20vw 3em 20vw;
         align-items: center;
@@ -115,7 +115,11 @@
     }
 
     .descricao_titulo {
-        font-size: 32px;
+        font-size: 20px;
+    }
+
+    .descricao {
+        margin: 2em;
     }
 
     .descricao_texto {
